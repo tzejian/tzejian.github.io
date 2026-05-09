@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Interactions: Variable font effect" windowTitle="web project" showCloseBtn={true}>
+  <div class="projectWindow ">
+
+    <div class="lg-7 lg-offset-1" data-inView="slideIn">
+      <div class="textbox jc">
+        <p>Variable font is something popular in recent years, Before variable fonts, each style was implemented as a separate font file. With variable fonts, all styles can be contained in a single file.</p>
+      </div>
+    </div>
+    
+    
+    <div class="lg-6" data-inView="slideIn">
+      <div class="variable-font">
+        <h3 class="hoverGainWeight">a simple <span>hover variable font</span> effect</h3>
+      </div>
+    </div>
+    <div class="lg-6 " data-inView="slideIn">
+      <div class="textbox jc">
+        <p>A hover effect to change the weight of the text using variable fonts. This could be applied and use on CTA.</p>
+      </div>
+    </div>
+    
+    <div class="lg-5 " data-inView="slideIn">
+      <div class="textbox jc">
+        <p>With a combination of GSAP split letters and timeline to animate and control the weight, creating this reveal-like effect which could be use on featured text or quote.</p>
+      </div>
+    </div>
+    
+    <div class="lg-6 lg-offset-1" data-inView="slideIn">
+      <div class="variable-font">
+        <h3 class="tl-effect">Every man dies. Not every man lives.<br>Example of a quote with<br>variable font effect</h3>
+        <div class="replay">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="m0,256c0,141.16,114.84,256,256,256s256-114.84,256-256h-21.33c0,129.39-105.28,234.67-234.67,234.67S21.33,385.39,21.33,256c0-129.39,105.28-234.67,234.67-234.67,79.47,0,153.58,40.53,196.71,106.67h-111.38s0,21.33,0,21.33h117.33c17.64,0,32-14.36,32-32V0s-21.33,0-21.33,0v114.45C422.12,43.43,341.91,0,256,0,114.84,0,0,114.84,0,256Z"
+              style="stroke-width: 0px;" />
+          </svg>
+          <p id="loop">play</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="lg-6" data-inView="slideIn">
+      <div class="variable-font moveContainer">
+        <h3 class="mouseMoveEffect">mouse left and right to control font weight</h3>
+      </div>
+    </div>
+    
+    <div class="lg-6" data-inView="slideIn">
+      <div class="textbox jc">
+        <p>A mouse-reactive effect where text weight 'breathes' and follows your movement. It uses high-frequency updates to ensure the transition from thin to bold</p>
+      </div>
+    </div>
+    
+    <div class="lg-6 lg-offset-2" data-inView="slideIn">
+      <div class="textbox jc">
+        <p>But variable font has its own limitations due to browser compatibility and mostly depends on how much axes the font provided.</p>
+        <p>WIP...tbc</p>
+      </div>
+    </div>
+    
+  </div>
+</BaseLayout>

@@ -1,0 +1,10 @@
+---
+interface Props {
+  windowClass?: string;
+}
+const { windowClass = 'projectWindow' } = Astro.props;
+---
+
+<div class={windowClass}>
+  <slot />
+</div>

@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CarouselTab from "../../components/CarouselTab.astro";
+import ExpCard from "../../components/ExpCard.astro";
+---
+
+<BaseLayout title="Project LMBL — DBS LiveMore" windowTitle="web project" showCloseBtn={true}>
+	<div class="projectWindow">
+		<div class="lg-8 lg-offset-4" data-inView="slideIn">
+			<div class="textbox jc">
+				<h2>Project DBS LMBL</h2>
+				<p>I was responsible for website maintenance, developing new modules tailored to client specifications, encompassing both Chinese and English versions.</p>
+				<p>The website was efficiently managed without relying on a CMS. Instead, we leveraged JSON to store data such as article titles, image numbers, tags, and estimated reading time. This streamlined data reuse across the website, saving time and minimizing the risk of errors compared to manual content population.</p>
+				<div style="display: flex; flex-direction: row;">
+					<a href="https://www.dbs.com/livemore/hk-zh/index.html" target="_blank" style="margin-right: 40px;"><h5>Visit Website (ZH)</h5></a>
+					<a href="https://www.dbs.com/livemore/hk-en/index.html" target="_blank"><h5>Visit Website (EN)</h5></a>
+				</div>
+			</div>
+		</div>
+		<CarouselTab>
+			<ExpCard type="image" src="/media/small/lmbl_1.png" hiResSrc="/media/projects/lmbl-1.webp" lg={6} caption="Landing page topfold"/>
+			<ExpCard type="image" src="/media/small/lmbl_1.png" hiResSrc="/media/projects/lmbl-2.webp" lg={6} caption="Articles listing page"/>
+		</CarouselTab>
+
+		<div class="lg-8 lg-offset-2" data-inView="slideInRight">
+			<div class="bitFilter">
+				<video playsinline loop autoplay muted data-lazyVideo style="object-fit: cover; height: 100%;">
+					<source src="https://tzejian3012.netlify.app/files/media/projects/lmbl-3.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<h6 class="caption">Article page</h6>
+		</div>
+
+		<div class="lg-5" data-inView="slideIn">
+			<div class="textbox jc">
+				<p>Developed reusable card layout and carousel modules for the entire website.</p>
+			</div>
+		</div>
+		<div class="lg-7" data-inView="slideInRight">
+			<div class="bitFilter">
+				<video playsinline loop autoplay muted data-lazyVideo>
+					<source src="https://tzejian3012.netlify.app/files/media/projects/lmbl-4.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</div>
+
+		<div class="lg-7" data-inView="slideIn">
+			<div class="bitFilter">
+				<video playsinline loop autoplay muted>
+					<source src="https://tzejian3012.netlify.app/files/media/projects/lmbl-5.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</div>
+		<div class="lg-5" data-inView="slideInRight">
+			<div class="textbox jc">
+				<p>Floating action button, which allows users to look at recommended articles. I coded this static module based on the requirements of clients, which on their end they use GA tracking to target the articles as needed.</p>
+			</div>
+		</div>
+
+		<div class="lg-5" data-inView="slideIn">
+			<div class="textbox jc">
+				<p>Implemented a website overlay for playing YouTube videos, enabling users to remain on the site while accessing video content.</p>
+			</div>
+		</div>
+
+		<div class="lg-7" data-inView="slideInRight">
+			<div class="bitFilter">
+				<video playsinline loop autoplay muted>
+					<source src="https://tzejian3012.netlify.app/files/media/projects/lmbl-6.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</div>
+	</div>
+</BaseLayout>

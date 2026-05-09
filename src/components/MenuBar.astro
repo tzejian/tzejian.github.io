@@ -1,0 +1,20 @@
+---
+interface Props {
+  windowTitle?: string;
+  showCloseBtn?: boolean;
+  isHomepage?: boolean;
+}
+const { windowTitle = '', showCloseBtn = false, isHomepage = false } = Astro.props;
+---
+<div class={`menuWindow ${isHomepage ? 'homepage' : ''}`}> 
+    {(isHomepage ? (
+            <h5>Project Folder | <span class="xItems" data-CountUpJs="0, 17, 0, 1">0</span> items</h5>
+    ) : (
+            <>
+                <h5>{"Curriculum Vitae"}</h5>
+                {showCloseBtn && (
+                        <a class="closeBtn" href="/"><img src="https://tzejian3012.netlify.app/files/media/close.png" alt="Close window" /></a>
+                )}
+            </>
+    ))}
+</div>

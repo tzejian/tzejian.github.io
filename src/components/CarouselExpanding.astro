@@ -1,0 +1,23 @@
+---
+// src/components/CarouselExpanding.astro
+
+// A carousel that consistently initializes across all screen sizes.
+// Replaces the old 'owlExpandingCard' functionality.
+---
+
+<div class="embla owlExpandingCard">
+  <div class="embla__viewport">
+    <div class="embla__container">
+      <slot />
+    </div>
+  </div>
+  <div class="embla__dots"></div>
+</div>
+
+<style is:global>
+  /* Ensure any immediate child element of the slot acts as an Embla slide */
+  .owlExpandingCard .embla__container > * {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+</style>

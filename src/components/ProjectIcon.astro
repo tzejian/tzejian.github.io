@@ -1,0 +1,16 @@
+---
+interface Props {
+  href: string;
+  icon: string;
+  label: string;
+  alt?: string;
+}
+const { href, icon, label, alt = '' } = Astro.props;
+---
+
+<div class="eaItem" data-inView="slideInUp">
+	<a href={href}>
+		<img src={icon} alt={alt || label}>
+		<p set:html={label} />
+	</a>
+</div>

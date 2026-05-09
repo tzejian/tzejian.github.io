@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="a Hand Sanitizer mockup" windowTitle="web project" showCloseBtn={true}>
+  <div class="projectWindow ">
+
+    <div class="lg-4" data-inView="slideIn">
+      <div class="textbox jc">
+        <p>I have designed a mockup of website based on selling hand sanitizer, using simple lines and white background to show a clean and minimal look.</p>
+      </div>
+    </div>
+    <div class="lg-8 lg-offset-2" data-inView="slideInRight">
+      <div class="bitFilter">
+        <img class="lazy" src="../media/small/hs-1.jpg" data-hiResImg="../media/design/hs-1.webp" alt="">
+      </div>
+      <h6 class="caption">Landing page</h6>
+    </div>
+    
+    <div class="lg-9" data-inView="slideInRight">
+      <div class="bitFilter">
+        <img class="lazy" src="../media/small/hs-2.jpg" data-hiResImg="../media/design/hs-2.webp" alt="">
+      </div>
+      <h6 class="caption">Products details page</h6>
+    </div>
+    
+    <div class="lg-9 lg-offset-3" data-inView="slideInRight">
+      <div class="bitFilter">
+        <video playsinline loop autoplay muted data-lazyVideo>
+          <source src="../media/design/Hs-Demo.mp4" type='video/mp4'>
+        </video>
+      </div>
+      <h6 class="caption">Video Demo in XD prototype</h6>
+    </div>
+    
+
+    
+    
+  </div>
+</BaseLayout>

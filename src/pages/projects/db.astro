@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Carousel2Col from "../../components/Carousel2Col.astro";
+---
+
+<BaseLayout title="Project DigiBanking" windowTitle="web project" showCloseBtn={true}>
+  <div class="projectWindow">
+    <div class="lg-5" data-inView="slideIn">
+      <div class="textbox jc">
+        <h2>Project DBS DigiBanking</h2>
+        <p>I was tasked with developing and partially involved in designing a modern and intuitive landing page that showcases the convenience of their online banking app.</p>
+      </div>
+    </div>
+    <div class="lg-7" data-inView="slideInRight">
+      <div class="bitFilter">
+        <img class="lazy" src="/media/small/digi-desktop-1.png" data-hiResImg="/media/projects/digi-desktop-1.webp" alt="" />
+      </div>
+    </div>
+    <div class="lg-6 lg-offset-2" data-inView="slideIn">
+      <div class="textbox">
+        <p>Working closely with the client, I created a responsive webpage that adapts to any screen size and features a clean interface that makes browsing content a breeze.</p>
+      </div>
+    </div>
+    <div class="lg-12" data-inView="slideInUp">
+      <Carousel2Col>
+        <div class="eaExpCard">
+          <div class="imgWrap bitFilter">
+            <img class="lazy" src="/media/small/digi-desktop-2.png" data-hiResImg="/media/projects/digi-desktop-2.webp" alt="" />
+          </div>
+        </div>
+        <div class="eaExpCard">
+          <div class="imgWrap bitFilter">
+            <img class="lazy" src="/media/small/digi-tablet.png" data-hiResImg="/media/projects/digi-tablet.webp" alt="" />
+          </div>
+        </div>
+        <div class="eaExpCard">
+          <div class="imgWrap bitFilter">
+            <img class="lazy" src="/media/small/digi-mobile.png" data-hiResImg="/media/projects/digi-mobile.webp" alt="" />
+          </div>
+        </div>
+        <div class="eaExpCard">
+          <div class="imgWrap bitFilter">
+            <img class="lazy" src="/media/small/digi-desktop-4.png" data-hiResImg="/media/projects/digi-desktop-4.webp" alt="" />
+          </div>
+        </div>
+      </Carousel2Col>
+    </div>
+  </div>
+</BaseLayout>

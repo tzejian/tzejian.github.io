@@ -1,0 +1,130 @@
+@use "mixins" as *;
+@use "variables" as *;
+// dark theme style
+body.darkTheme {
+  background-color: $black;
+  color: $lightWhite;
+  ::-webkit-scrollbar-thumb {
+    background-color: $white;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-left: 2px solid $white;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    background-color: $black;
+  }
+
+  header {
+    border-top: 2px solid $white;
+    border-left: 2px solid $white;
+    border-right: 2px solid $white;
+  }
+  .content {
+    border: 2px solid $white;
+    .appWindow {
+      border: 2px solid $white;
+      .menuWindow {
+        border-bottom: 2px solid $white;
+        span.hr {
+          background: $white;
+        }
+
+        .closeBtn {
+          img {
+            border-radius: 25%;
+            filter: invert(1);
+          }
+        }
+      }
+      .itemWindow {
+        .border {
+          border: 2px solid rgb(255, 255, 255);
+          box-shadow: 3px 3px $white;
+        }
+        .eaItem {
+          a {
+            filter: invert(1);
+          }
+          p{
+            color: $black;
+          }
+        }
+      }
+      .projectWindow {
+        .bitFilter {
+          border: 2px solid $white;
+          iframe,
+          video,
+          img {
+            -webkit-filter: opacity(0.5);
+            filter: opacity(0.5);
+          }
+        }
+        .textbox {
+          a {
+            color: rgb(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 0px rgb(255, 255, 255, 0.8),
+              -1px -1px 0px rgb(255, 255, 255, 0.8);
+          }
+        }
+
+        .owl-carousel {
+          .eaExpCard {
+            .imgWrap {
+              border: 2px solid $white;
+            }
+          }
+
+          .owl-dot {
+            background-color: $white;
+          }
+        }
+        
+        .variable-font{
+          .replay{
+            svg{
+              filter: invert(1);
+            }
+          }
+        }
+      }
+      .aboutWindow {
+        .border {
+          border: 2px solid rgb(255, 255, 255);
+          box-shadow: 3px 3px $white;
+        }
+        .textbox {
+          a {
+            color: rgb(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 0px rgb(255, 255, 255, 0.8),
+              -1px -1px 0px rgb(255, 255, 255, 0.8);
+          }
+          .imgGroup {
+            .singleSoftware {
+              img {
+                filter: invert(1);
+              }
+            }
+          }
+        }
+        span.breakLine {
+          border-bottom: 2px solid rgb(255, 255, 255);
+        }
+      }
+    }
+    .system {
+      .sysItem {
+        filter: invert(1);
+        h6{
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+
+
+// end of dark theme style

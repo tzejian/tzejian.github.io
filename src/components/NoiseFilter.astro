@@ -1,0 +1,15 @@
+---
+---
+
+<svg style="display: none;" class="hoverFilter">
+    <defs>
+      <filter id="noise">
+        <feTurbulence baseFrequency="0.7,0.8" seed="0" type="fractalNoise" result="static">
+          <animate id="feTurbulenceAnimation" attributeName="seed" values="0;100" dur="600ms" repeatCount="1" />
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="static">
+          <animate id="feDisplacementMapAnimation" attributeName="scale" values="0;40;0" dur="600ms" repeatCount="1" />
+        </feDisplacementMap>
+      </filter>
+    </defs>
+  </svg>

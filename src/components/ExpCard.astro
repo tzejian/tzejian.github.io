@@ -1,0 +1,34 @@
+---
+// ExpCard.astro
+interface Props {
+  type: 'video' | 'image';
+  src: string;
+  hiResSrc?: string;
+  alt?: string;
+  lg?: number;
+  md?: number;
+  sm?: number;
+  caption?: string;
+}
+
+const { type, src, hiResSrc, alt = '', lg, md, sm, caption } = Astro.props;
+
+const sizeClasses = [
+  lg && `lg-${lg}`,
+  md && `md-${md}`,
+  sm && `sm-${sm}`,
+].filter(Boolean).join(' ');
+---
+
+<div class={`eaExpCard ${sizeClasses}`}>
+  <div class="imgWrap bitFilter">
+    {type === 'video' ? (
+      <video playsinline loop autoplay muted data-lazyVideo style="object-fit: cover; height: 100%;">
+        <source src={src} type="video/mp4" />
+      </video>
+    ) : (
+      <img class="lazy" src={src} data-hiResImg={hiResSrc} alt={alt} />
+    )}
+  </div>
+  {caption && <h6 class="caption">{caption}</h6>}
+</div>

@@ -1,0 +1,41 @@
+---
+// src/components/CarouselTab.astro
+
+// A carousel that only initializes on tablet and mobile (max-width: 834px).
+// On desktop, it falls back to a CSS Grid/Flexbox layout.
+---
+
+<div class="embla owlTabCaro" data-inView="slideIn">
+  <div class="embla__viewport">
+    <div class="embla__container">
+      <slot />
+    </div>
+  </div>
+  <div class="embla__dots"></div>
+</div>
+
+<style is:global>
+  /* Mobile/Tablet Carousel View */
+  @media (max-width: 834px) {
+    /* Ensure the embla wrapper stacks viewport + dots vertically */
+    .owlTabCaro.embla {
+      display: flex;
+      flex-direction: column;
+    }
+    /* The viewport must fill full width so slides don't overflow */
+    .owlTabCaro .embla__viewport {
+      width: 100%;
+      overflow: hidden;
+    }
+    .owlTabCaro .embla__container {
+      display: flex;
+    }
+    .owlTabCaro .embla__container > * {
+      /* 100% - 40px width allows the next/prev slides to 'peek' out from the edges */
+      flex: 0 0 calc(100% - 40px) !important;
+      min-width: 0 !important;
+      /* Gap between slides */
+      margin-right: 15px !important;
+    }
+  }
+</style>

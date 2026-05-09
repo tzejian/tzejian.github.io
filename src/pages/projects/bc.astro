@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Project Binary Coffee" windowTitle="web project" showCloseBtn={true}>
+  <div class="projectWindow">
+    <div class="lg-8 lg-offset-2" data-inView="slideIn">
+      <div class="textbox jc">
+        <h2>Project Binary Coffee</h2>
+        <p>For this project, I had the privilege of coding a single-page static HTML site designed by an agency. It was a
+          challenging and rewarding experience to bring the agency's vision to life through coding, and I am proud to have
+          delivered a site that met their expectations.</p>
+      </div>
+    </div>
+    <div class="lg-8" data-inView="slideInRight">
+      <div class="bitFilter" >
+        <img  class="lazy" src="/media/small/binary-desktop-1920.webp" data-hiResImg="/media/projects/binary-desktop-1920.webp" alt="">
+      </div>
+    </div>
+    <div class="lg-10 lg-offset-1" data-inView="slideInUp">
+      <div class="bitFilter">
+        <video playsinline loop autoplay muted data-lazyVideo>
+          <source src="/media/projects/binary-desktop.mp4" type='video/mp4' />
+        </video>
+      </div>
+    </div>
+    <div class="lg-7" data-inView="slideInUp">
+      <div class="bitFilter">
+        <img  class="lazy" src="/media/small/binary-ipad-and-iphone-potrait.png" data-hiResImg="/media/projects/binary-ipad-and-iphone-potrait.webp" alt="">
+      </div>
+    </div>
+    <div class="lg-5" data-inView="slideInRight">
+      <div class="textbox jc">
+        <p>Working on a single-page site presented a unique set of challenges, such as ensuring that the design elements and
+        content are well-organized and optimized for fast loading times. I worked closely with the agency to ensure that their
+        design was accurately reflected in the final product, and the end result was a seamless user experience that showcased
+        the client's brand and message.</p>
+      </div>
+      
+    </div>
+    <div class="lg-6" data-inView="slideInRight">
+      <div class="textbox jc">
+        <p>As part of a dynamic team, I had the opportunity to work on a cutting-edge ordering web app for a coffee shop. My
+        role was to focus on the front-end development, ensuring that the user interface was intuitive and visually engaging.</p>
+      </div>
+      
+    </div>
+    <div class="lg-6" data-inView="slideInUp">
+      <div class="bitFilter">
+        <video playsinline loop autoplay muted data-lazyVideo>
+          <source src="/media/projects/binary-Order.mp4" type='video/mp4' />
+        </video>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
